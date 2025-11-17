@@ -74,7 +74,7 @@ function App() {
           </div>
           <div className="project">
             <img
-              src="Portfolio\src\assets\Screenshot 2025-11-17 212922.png"
+              src="Portfolio/src/assets/Screenshot 2025-11-17 212922.png"
               alt="Screenshot of Project 3"
               className="project-screenshot"
             />
