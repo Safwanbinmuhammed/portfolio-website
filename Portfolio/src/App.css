@@ -1,0 +1,383 @@
+/* --- Revised Classy & Futuristic CSS (No Robot, Reduced Neon) --- */
+
+/* General Body Styling (Enhanced) */
+.portfolio {
+  font-family: 'Inter', sans-serif; /* Modern, clean sans-serif */
+  line-height: 1.8;
+  color: #c0c7d4; /* Lighter, futuristic text color */
+  background-color: #0d1117; /* Deep dark background */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif; /* Bold, futuristic headings */
+  color: #e0e7ee; /* Bright headings */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px rgba(0, 198, 255, 0.2); /* Subtle glow reduction */
+}
+
+p {
+  font-size: 1.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 🚀 Header & Navigation (Refined Uplift) */
+.header {
+  background-color: rgba(13, 17, 23, 0.9); /* Slightly less transparent dark background */
+  backdrop-filter: blur(8px); /* Less aggressive frosted glass effect */
+  box-shadow: 0 4px 15px rgba(0, 198, 255, 0.08); /* Reduced shadow intensity */
+  color: #e0e7ee;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(0, 198, 255, 0.1); /* Subtle bottom border */
+}
+
+.header nav {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.15em;
+  text-shadow: none;
+}
+
+.header ul {
+  gap: 3rem;
+}
+
+.header a {
+  color: #8c9cb6;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  position: relative;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.header a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px; /* Thinner underline */
+  background-color: #00c6ff;
+  transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother, elastic transition */
+  box-shadow: 0 0 5px rgba(0, 198, 255, 0.4); /* Subtle shadow reduction */
+}
+
+.header a:hover {
+  color: #00c6ff;
+}
+
+.header a:hover::after {
+    width: 100%;
+}
+
+/* 🌌 Hero Section (Sci-fi Elegance) */
+.hero {
+  background: linear-gradient(145deg, #1a222c, #0d1117);
+  padding: 12rem 2rem 8rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background-image {
+  filter: brightness(40%) saturate(150%) hue-rotate(200deg);
+  opacity: 0.6;
+}
+
+.hero-content h2 {
+  font-size: 4.5rem;
+  letter-spacing: 0.2em;
+  background: linear-gradient(90deg, #00c6ff, #8a2be2, #0072ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(0, 198, 255, 0.6), 0 0 30px rgba(138, 43, 226, 0.3); /* Reduced glow */
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  
+  color: #aebacd;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 5px rgba(0, 198, 255, 0.1);
+}
+
+/* 💡 CTA Button (Polished Hover) */
+.cta-button {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.4); /* Subtle shadow reduction */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother transition */
+}
+
+.cta-button:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  transform: translateY(-3px) scale(1.01); /* Reduced lift and scale */
+  box-shadow: 0 5px 20px rgba(0, 198, 255, 0.7), 0 10px 40px rgba(0, 114, 255, 0.4); /* Stronger but localized hover glow */
+  color: black;
+}
+
+/* 📄 Main Content Sections */
+.about, .skills, .projects, .contact {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  border-bottom: 1px solid rgba(0, 198, 255, 0.05); /* Very subtle separator */
+}
+
+.about h2, .skills h2, .projects h2, .contact h2 {
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  color: #00c6ff;
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.3); /* Reduced glow */
+}
+
+.about h2::after, .skills h2::after, .projects h2::after, .contact h2::after {
+    width: 80px;
+    height: 3px; /* Slightly thinner separator */
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.4); /* Reduced glow */
+}
+
+/* 🛠️ Skills Grid (Polished Tiles) */
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 2rem;
+}
+
+.skill {
+  background-color: #1a222c;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 198, 255, 0.08); /* Lighter border */
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.05); /* Reduced initial glow */
+  color: #aebacd;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px) scale(1.02); /* Reduced lift and scale */
+  box-shadow: 0 8px 20px rgba(0, 198, 255, 0.4), 0 15px 30px rgba(0, 114, 255, 0.2); /* Stronger but localized hover glow */
+  background-color: #2c3a4f;
+  color: #e0e7ee;
+}
+
+/* 📂 Projects Grid (Polished Cards) */
+.projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 4rem;
+}
+
+.project {
+  background-color: #1a222c;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 198, 255, 0.05); /* Reduced initial shadow */
+  border-top: 5px solid #00c6ff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smoother overall card transition */
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top left, rgba(0, 198, 255, 0.05) 0%, transparent 50%); /* Reduced opacity */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.project:hover::before {
+    opacity: 1;
+}
+
+
+.project:hover {
+    box-shadow: 0 10px 35px rgba(0, 198, 255, 0.2); /* Reduced hover shadow */
+    transform: translateY(-7px); /* Reduced lift */
+    border-top: 5px solid #8a2be2;
+}
+
+/* Images within projects */
+.project-screenshot {
+  border-radius: 10px;
+  border: 2px solid rgba(0, 198, 255, 0.15); /* Lighter border */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.project:hover .project-screenshot {
+  transform: scale(1.01); /* Very subtle zoom */
+  box-shadow: 0 5px 25px rgba(0, 198, 255, 0.3); /* Subtle hover shadow */
+}
+
+/* 📞 Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #aebacd;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 198, 255, 0.2);
+  border-radius: 8px;
+  background-color: #1a222c;
+  color: #e0e7ee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #00c6ff;
+  box-shadow: 0 0 10px rgba(0, 198, 255, 0.3);
+}
+
+.form-status {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-status.success {
+  background-color: rgba(0, 255, 0, 0.1);
+  color: #00ff00;
+  border: 1px solid rgba(0, 255, 0, 0.3);
+}
+
+.form-status.error {
+  background-color: rgba(255, 0, 0, 0.1);
+  color: #ff0000;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* 🦶 Footer (Sleek & Minimal) */
+.footer {
+  background-color: #151b22;
+  color: #8c9cb6;
+  padding: 2.5rem 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  border-top: 1px solid rgba(0, 198, 255, 0.05);
+}
+
+/* 📱 Media Queries (No changes needed, they remain consistent with the overall structure) */
+@media (max-width: 768px) {
+.header nav {
+ padding: 0 1.5rem;
+ }
+ .header h1 {
+ font-size: 1.5rem;
+ }
+ .header ul {
+ gap: 1.5rem;
+ }
+ .hero h2 {
+ font-size: 3rem;
+ }
+ .hero-content p {
+ font-size: 1.2rem;
+ }
+ .about, .skills, .projects, .contact {
+  padding: 6rem 1.5rem;
+ }
+ .about-content {
+ flex-direction: column;
+ text-align: center;
+}
+ .profile-photo {
+ margin-bottom: 1.5rem;
+ }
+ .projects-grid {
+ gap: 3rem;
+ }
+ .project {
+ padding: 2rem;
+ }
+}
+
+/* For even smaller screens */
+@media (max-width: 480px) {
+ .hero h2 {
+ font-size: 2.2rem;
+ line-height: 1.3;
+ }
+ .hero-content p {
+ font-size: 1rem;
+ }
+ .cta-button {
+ padding: 0.8rem 1.8rem;
+ font-size: 0.9rem;
+ }
+ .header nav {
+ flex-direction: column;
+ align-items: center;
+ }
+ .header ul {
+ width: 100%;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding-top: 1rem;
+ }
+ .about, .skills, .projects, .contact {
+ padding: 4rem 1rem;
+ }
+}
