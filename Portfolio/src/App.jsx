@@ -54,33 +54,33 @@ function App() {
         <div className="projects-grid">
           <div className="project">
             <img
-              src="https://via.placeholder.com/400x250/d0d7e0/2c3e50?text=Project+1+Screenshot"
+              src="Portfolio\src\assets\Screenshot 2025-11-17 212519.png"
               alt="Screenshot of Project 1"
               className="project-screenshot"
             />
             <h3>Project 1: E-commerce Platform</h3>
             <p>A sophisticated web application built with React and Node.js, featuring secure payment integration and a responsive design.</p>
-            <a href="#" className="project-link">Currently Doing</a>
+            <a href="https://travelearncoin.netlify.app/" className="project-link">Currently Doing</a>
           </div>
           <div className="project">
             <img
-              src="https://via.placeholder.com/400x250/d0d7e0/2c3e50?text=Project+2+Screenshot"
+              src="Portfolio\src\assets\Screenshot 2025-11-17 212624.png"
               alt="Screenshot of Project 2"
               className="project-screenshot"
             />
             <h3>Project 2: Hospital Queue Managment System</h3>
             <p>A hospital queue management system efficiently organizes patient flow by digitally allocating patients a service queue number or time slot, reducing wait times and improving staff productivity. It uses centralized screens and alerts to direct patients, leading to better patient satisfaction and optimized resource use.</p>
-            <a href="#" className="project-link">View Project</a>
+            <a href="https://astounding-treacle-cfa2e8.netlify.app/" className="project-link">View Project</a>
           </div>
           <div className="project">
             <img
-              src="https://via.placeholder.com/400x250/d0d7e0/2c3e50?text=Project+3+Screenshot"
+              src="Portfolio\src\assets\Screenshot 2025-11-17 212922.png"
               alt="Screenshot of Project 3"
               className="project-screenshot"
             />
             <h3>Project 3: Interactive Portfolio Site</h3>
             <p>This very portfolio site, showcasing modern web development techniques and elegant design principles.</p>
-            <a href="#" className="project-link">View Project</a>
+            <a href="" className="project-link">View Project</a>
           </div>
         </div>
       </section>
